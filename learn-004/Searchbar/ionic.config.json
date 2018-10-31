@@ -1,0 +1,7 @@
+{
+  "name": "Searchbar",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

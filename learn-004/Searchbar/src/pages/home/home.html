@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar #search showCancelButton="true" (ionCancel)="onCancel($event)" (ionInput)="getItems($event)" [(ngModel)]="inputValue"
+    animated="true" autocomplete="on" autocorrect="on"
+    cancelButtonText="取消" placeholder="搜索" type="number"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+</ion-content>
